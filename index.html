@@ -1,24 +1,284 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook Sesión 19: Diseñando para Todos - Simulación de Accesibilidad IA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
-</body>
 
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 19: Diseñando para Todos - Simulación de Accesibilidad IA</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Que los estudiantes comprendan los principios del Diseño Inclusivo y la Accesibilidad.</li>
+                                        <li>Que aprendan cómo la IA puede simular las limitaciones de un usuario para generar feedback cuantitativo (ej. 'Índice de Dolor').</li>
+                                        <li>Que utilicen este feedback para realizar un rediseño empático e informado de un producto.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">⚡Saludo Interactivo con IA:</strong> Activación y contextualización de la misión.</li>
+                                        <li><strong class="tactic-highlight">⚡"I Can Statement" + Desafío:</strong> Clarificación de objetivos y presentación del reto del día.</li>
+                                        <li><strong class="tactic-highlight">⚡AI GYM:</strong> Diálogo estratégico con Xolo para la conceptualización.</li>
+                                        <li><strong class="tactic-highlight">⚡Brain Spark:</strong> Ejecución técnica y práctica aumentada por la Dupla Dinámica.</li>
+                                        <li><strong class="tactic-highlight">⚡Gnius STORM:</strong> Showcase de prototipos, síntesis y reflexión.</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Una versión rediseñada de uno de sus productos anteriores.</li>
+                                        <li>Las modificaciones del rediseño deben estar justificadas directamente por el feedback del reporte de accesibilidad de la IA.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Cuentas de Onshape para cada alumno.</li>
+                                        <li>Chat "Agente Gnius" (Xolo) activo y funcionando.</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-11).</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna):</strong>
+                                            <ul>
+                                                <li>Asegurar que Xolo y Onshape están funcionales.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Entender claramente los conceptos de Diseño Inclusivo y Accesibilidad. Repasar el escenario de simulación (artritis) y el concepto de 'Índice de Dolor'.</li>
+                                        <li><strong>Preparación de Ejemplos:</strong> Tener listas imágenes de productos que son excelentes ejemplos de diseño inclusivo (ej. tijeras con agarre especial, utensilios de cocina OXO Good Grips) para inspirar a los estudiantes.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo de IA y Contexto ⏰ 3 minutos</h2>
+                <p>Introducir la sesión como un acto de inclusión, utilizando la IA para simular barreras y construir puentes.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Bienvenida y Contexto de la Misión ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 2) El facilitador presenta la misión de hoy: diseñar para la diversidad humana.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Saludos. Han diseñado productos para un usuario 'promedio'. Pero el mundo no es promedio. El verdadero desafío del gran diseño es crear soluciones que funcionen para todos, incluyendo a personas con capacidades diferentes. Hoy, el diseño se vuelve un acto de inclusión. Utilizaremos la IA no para optimizar la forma, sino para simular la barrera, para ayudarnos a construir puentes en lugar de muros.</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Activación de la IA ⏰ 2 minutos</h3>
+                            <p>El facilitador guía a los alumnos para que inicien su sesión de trabajo con Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Inicien su sesión con Xolo: 'Hola Xolo, listo para la Misión 19', seguido de su nombre, perfil y gustos. Esperen su confirmación.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: "I Can Statement" y Presentación del Desafío ⏰ 7 minutos</h2>
+                <p>Presentar el Diseño Inclusivo y el concepto de una 'IA de Accesibilidad' que simula usuarios para dar feedback cuantitativo.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Diseño Inclusivo y Simulación de Usuario IA ⏰ 4 minutos</h3>
+                            <p>(Proyectar Diapositiva 3) El facilitador explica los conceptos clave y el rol de Xolo como simulador de empatía.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">El **Diseño Inclusivo** es diseñar para la diversidad humana. La accesibilidad es la base de un buen diseño. ¿Pero cómo puede un diseñador sin artritis entender las dificultades de agarrar un objeto? Hoy, Xolo simulará ser una 'IA de Accesibilidad'. No diseñará por ustedes; simulará ser un usuario con una limitación específica y evaluará su diseño desde esa perspectiva, dándoles feedback cuantitativo para guiar su rediseño.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Declaración del "I Can Statement" ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 4) El facilitador presenta el objetivo de aprendizaje de la sesión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">El objetivo de hoy es diseñar con empatía informada. Al final de la sesión, podrán decir: <strong>'Yo entiendo los principios del Diseño Inclusivo y puedo utilizar un reporte de accesibilidad generado por una IA para rediseñar una versión de mi producto que responda a las necesidades de un usuario simulado.'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: A.I. GYM (IA para la Simulación de Usuarios) ⏰ 12 minutos</h2>
+                <p>Fase de diálogo con Xolo para entender el escenario de simulación y el concepto de "Índice de Dolor".</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: El Escenario de Simulación ⏰ 6 minutos</h3>
+                            <p>(Proyectar Diapositiva 5) Los estudiantes consultan a Xolo sobre su nuevo rol y el perfil de usuario que simulará.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Entremos al A.I. GYM. La base de datos de Xolo ha cambiado. Ahora contiene datos sobre limitaciones humanas. Para entender el filtro que aplicaremos, consúltenle: <strong>'Xolo, explícame tu rol como simulador de accesibilidad y descríbeme el perfil de usuario que simularemos hoy.'</strong> El perfil es una persona mayor con artritis moderada.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Feedback Cuantitativo y el 'Índice de Dolor' ⏰ 6 minutos</h3>
+                            <p>(Proyectar Diapositiva 6) El facilitador explica cómo Xolo traducirá un problema cualitativo en datos accionables.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Para que el feedback sea accionable, Xolo no dará opiniones, sino datos. Generará un **'Índice de Dolor'** simulado. Un reporte podría decir: *'Índice de Dolor: 8/10. Puntos Críticos: 1. Los botones requieren demasiada presión. 2. La carcasa lisa no ofrece un agarre seguro.'* Su misión es tomar este reporte y rediseñar para bajar ese índice.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Brain Spark (Rediseño para la Accesibilidad) ⏰ 18 minutos</h2>
+                <p>Fase de trabajo práctico donde los estudiantes auditan su diseño, planifican y ejecutan un rediseño basado en el feedback de la IA.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Análisis, Planificación y Ejecución del Rediseño ⏰ 18 minutos</h3>
+                            <p>(Proyectar Diapositiva 7) Los estudiantes ejecutan el ciclo completo de diseño inclusivo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Ahora, al Brain Spark. Tienen 18 minutos. Primero, tomen uno de sus diseños anteriores y preséntenlo a Xolo para la auditoría, por ejemplo: **'Quiero evaluar mi 'Ratón Flow' para el perfil de usuario con artritis.'** Segundo, reciban y analicen el reporte de accesibilidad. Tercero, planifiquen su estrategia de rediseño basada en los puntos críticos. Finalmente, abran Onshape y apliquen esas modificaciones a su modelo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM (Cierre de Sesión) ⏰ 5 minutos</h2>
+                <p>Fase final de "Showcase de Inclusión", donde los estudiantes explican cómo el feedback de la IA guio su rediseño.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Think (Reflexión Individual) ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 8) El facilitador guía una reflexión sobre el impacto del rediseño.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                     Tiempo. Observen su diseño "antes" y "después". Reflexionen: <strong>¿Cómo esta simulación cambia su perspectiva sobre su propio diseño? ¿Diseñar para la accesibilidad hace que el producto sea peor para los usuarios 'promedio', o a menudo lo mejora para todos?</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Pair (Showcase de Inclusión) ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 9) Los estudiantes muestran su "antes y después" y explican el proceso.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                    En parejas, es el "Showcase de Inclusión". Muestren el "antes" y "después" de su diseño. Expliquen cómo el reporte de la IA guio su rediseño. Por ejemplo: "El 'Índice de Dolor' era alto por este botón pequeño. Lo rediseñé para que fuera un balancín grande y fácil de presionar."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Share (Síntesis y Cierre) ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 10) El facilitador consolida la sesión, enfatizando el diseño con empatía y conciencia.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                    Han experimentado una de las aplicaciones más profundas y éticas de la IA: su capacidad para ayudarnos a construir empatía a escala. Han aprendido que un gran diseñador no diseña para sí mismo, sino para la rica y variada gama de la experiencia humana. Al resolver problemas para los extremos, a menudo crean mejores soluciones para el centro. Han diseñado con conciencia.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
